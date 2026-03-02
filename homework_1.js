@@ -10,7 +10,7 @@
 // =========== task 2 ===========
 
 // function toUpperCase(str) {
-//     return str.toUpperCase("hello world");
+//     return str.toUpperCase();
 // }
 
 // console.log(toUpperCase("hello world!"));
@@ -151,4 +151,8 @@ console.log(customTypeOf(null));
 //     return (typeof num1 === "number" && typeof num2 === "number" && !Number.isNaN(num1) && !Number.isNaN(num2) && Number.isFinite(num1) && Number.isFinite(num2)) ? num1 + num2 : "Invalid input";
 // }
 
+<<<<<<< HEAD
 // console.log(sumOfNumbers(12, "12"));
+=======
+console.log(sumOfNumbers(12, "12"));
+>>>>>>> 6d6d83b2a5225b66c3db1d3e771fe671bd004dec
