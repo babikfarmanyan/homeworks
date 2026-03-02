@@ -77,17 +77,12 @@
 
 // =========== task 11 ===========
 
-// function customTypeOf(argument) {
-//     let type = typeof argument;
 
-//     if (!argument && type === "object"){
-//         return "null";
-//     } else if (type === "undefined") { return type; }
+function customTypeOf(argument) {
+    return Object.prototype.toString.call(argument).slice(8, -1).toLowerCase();
+}
 
-//     return argument.constructor.name.toLowerCase();
-// }
-
-// console.log(customTypeOf(undefined));
+console.log(customTypeOf(null));
 
 // =========== task 12 ===========
 
@@ -135,7 +130,9 @@
 // =========== task 17 ===========
 
 // function isObject(arg) {
-//     return arg.constructor.name === "Object" ? true : false;
+//     if (arg === null || arg === undefined) { return false; }
+
+//     return Object.getPrototypeOf(arg) === Object.prototype;
 // }
 
 // console.log(isObject({}));
@@ -150,8 +147,8 @@
 
 // =========== task 19 ===========
 
-function sumOfNumbers(num1, num2) {
-    return (typeof num1 === "number" && typeof num2 === "number" && !Number.isNaN(num1) && !Number.isNaN(num2) && Number.isFinite(num1) && Number.isFinite(num2)) ? num1 + num2 : "Invalid input";
-}
+// function sumOfNumbers(num1, num2) {
+//     return (typeof num1 === "number" && typeof num2 === "number" && !Number.isNaN(num1) && !Number.isNaN(num2) && Number.isFinite(num1) && Number.isFinite(num2)) ? num1 + num2 : "Invalid input";
+// }
 
-console.log(sumOfNumbers(12, "12"));
+// console.log(sumOfNumbers(12, "12"));
