@@ -10,7 +10,7 @@
 // =========== task 2 ===========
 
 // function toUpperCase(str) {
-//     return str.toUpperCase("hello world");
+//     return str.toUpperCase();
 // }
 
 // console.log(toUpperCase("hello world!"));
