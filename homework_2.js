@@ -1,10 +1,10 @@
 // =========== 1) isEven(n) ===========
 
-function isEven(n) {
-    return n % 2 === 0;
-}
+// function isEven(n) {
+//     return n % 2 === 0;
+// }
 
-console.log(isEven(2));
+// console.log(isEven(2));
 
 
 // =========== 2) sumUpTo(n) ===========
@@ -46,11 +46,11 @@ console.log(isEven(2));
 
 // =========== 4) countDigits(n) ===========
 
-// function countDigits(n) {
-//     return String(n).length;
-// }
+function countDigits(n) {
+    return n >= 0 ? String(n).length : String(-n).length;
+}
 
-// console.log(countDigits(1212));
+console.log(countDigits(-1212));
 
 
 // =========== 5) sumArray(arr) ===========
