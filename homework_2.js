@@ -46,11 +46,11 @@
 
 // =========== 4) countDigits(n) ===========
 
-function countDigits(n) {
-    return n >= 0 ? String(n).length : String(-n).length;
-}
+// function countDigits(n) {
+//     return n >= 0 ? String(n).length : String(-n).length;
+// }
 
-console.log(countDigits(-1212));
+// console.log(countDigits(-1212));
 
 
 // =========== 5) sumArray(arr) ===========
@@ -216,8 +216,8 @@ console.log(countDigits(-1212));
 
 // =========== 12) firstAndLast(arr) ===========
 
-// function firstAndLast(arr) {
-//     return [arr[0], arr[arr.length - 1]];
-// }
+function firstAndLast(arr) {
+    return arr.length > 0 ? [arr[0], arr[arr.length - 1]] : [];
+}
 
-// console.log(firstAndLast([1, 2, 3]));
+console.log(firstAndLast([]));
